@@ -22,24 +22,22 @@ const AddUser = () => {
     e.preventDefault();
     if (formValues.consent) {
       handleAddUser(formValues);
-      handleClearForm();
+      handleClearForm(initialFormState);
     } else {
       handleThrowError('You need to give consent');
     }
   };
 
   return (
-    <>
-      <ViewWrapper as="form" onSubmit={handleSubmitUser}>
-        <Title>Add new student</Title>
-        <FormField label="Name" id="name" name="name" value={formValues.name} onChange={handleInputChange} />
-        <FormField label="Attendance" id="attendance" name="attendance" value={formValues.attendance} onChange={handleInputChange} />
-        <FormField label="Average" id="average" name="average" value={formValues.average} onChange={handleInputChange} />
-        <FormField label="Consent" id="consent" name="consent" type="checkbox" value={formValues.average} onChange={handleToggleConsent} />
-        <Button type="submit">Add</Button>
-        {formValues.error ? <p>{formValues.error}</p> : null}
-      </ViewWrapper>
-    </>
+    <ViewWrapper as="form" onSubmit={handleSubmitUser}>
+      <Title>Add new student</Title>
+      <FormField label="Name" id="name" name="name" value={formValues.name} onChange={handleInputChange} />
+      <FormField label="Attendance" id="attendance" name="attendance" value={formValues.attendance} onChange={handleInputChange} />
+      <FormField label="Average" id="average" name="average" value={formValues.average} onChange={handleInputChange} />
+      <FormField label="Consent" id="consent" name="consent" type="checkbox" value={formValues.average} onChange={handleToggleConsent} />
+      <Button type="submit">Add</Button>
+      {formValues.error ? <p>{formValues.error}</p> : null}
+    </ViewWrapper>
   );
 };
 
