@@ -3,7 +3,6 @@ import AddUser from './AddUser';
 import Dashboard from './Dashboard';
 import { screen, fireEvent } from '@testing-library/react';
 import { renderWithProviders } from 'helpers/renderWithProviders';
-import '@testing-library/jest-dom';
 
 describe('Add User', () => {
   it('Adds new user to the list', () => {
