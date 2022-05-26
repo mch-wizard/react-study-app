@@ -10,11 +10,16 @@ export const theme = {
     warning: '#E1D888',
     lightPurple: '#ECEFF7',
     darkPurple: '#C0C7D6',
+    gothamNavy: '#243B67',
+    gothamBlue: '#6E5DCF',
+    gothamPurple: '#C27DFC',
+    gothamGrey: '#EAEBED',
   },
   fontSize: {
     xl: '24px',
     l: '17px',
     m: '12px',
     s: '11px',
+    xs: '9px',
   },
 };
