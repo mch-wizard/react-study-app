@@ -17,7 +17,7 @@ describe('Add User', () => {
     fireEvent.change(screen.getByTestId('Average'), { target: { value: '4.9' } });
     fireEvent.click(screen.getByTestId('Consent'));
     fireEvent.click(screen.getByText('Add'));
-    screen.getByText('Lewis');
+    screen.getByText('Marcin');
   });
 
   it('Prevents adding new user if the consent is not checked', () => {
