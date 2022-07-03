@@ -16,6 +16,7 @@ export const theme = {
     gothamGrey: '#EAEBED',
   },
   fontSize: {
+    xxl: '34px',
     xl: '24px',
     l: '17px',
     m: '12px',
